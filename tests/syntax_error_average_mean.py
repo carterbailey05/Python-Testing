@@ -1,3 +1,5 @@
+#This test case has a syntax error on line 22, missing a semi colon
+
 from __future__ import annotations
 
 
@@ -17,7 +19,7 @@ def mean(nums: list) -> float:
         ...
     ValueError: List is empty
     """
-    if not nums:
+    if not nums #Missing a semi colon, syntax error
         raise ValueError("List is empty")
     return sum(nums) / len(nums)
 
