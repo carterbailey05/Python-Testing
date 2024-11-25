@@ -1,4 +1,4 @@
-//Syntax error on line 30, missing "=="
+#Syntax error on line 30, missing "=="
 # Eulers Totient function finds the number of relative primes of a number n from 1 to n
 def totient(n: int) -> list:
     """
