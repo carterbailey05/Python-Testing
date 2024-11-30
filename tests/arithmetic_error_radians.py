@@ -1,4 +1,4 @@
-//A divide by 0 arithmetic error on line 24
+#A divide by 0 arithmetic error on line 24
 from math import pi
 
 
@@ -21,7 +21,7 @@ def radians(degree: float) -> float:
     True
     """
 
-    return degree / (180 / 0) //divide by 0 error
+    return degree / (180 / 0) #divide by 0 error
 
 
 if __name__ == "__main__":
