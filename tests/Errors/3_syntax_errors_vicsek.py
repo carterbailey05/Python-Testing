@@ -1,4 +1,4 @@
-syntax errors on lines 44, 49, 54
+#syntax errors on lines 44, 49, 54
 """Authors Bastien Capiaux & Mehdi Oudghiri
 
 The Vicsek fractal algorithm is a recursive algorithm that creates a
