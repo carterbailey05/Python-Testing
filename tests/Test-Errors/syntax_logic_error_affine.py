@@ -1,4 +1,4 @@
-#Incorrect plaintext decryption formula on line
+#missing closing bracket on line 71, as well as incorrect formula
 import random
 import sys
 
@@ -68,7 +68,7 @@ def decrypt_message(key: int, message: str) -> str:
         if symbol in SYMBOLS:
             sym_index = SYMBOLS.find(symbol)
             plain_text += SYMBOLS[
-                (sym_index * mod_inverse_of_key_a - key_b) % len(SYMBOLS) #incorrect formula
+                (sym_index * mod_inverse_of_key_a - key_b) % len(SYMBOLS #Incorrect formula and missing closing bracket
             ]
         else:
             plain_text += symbol
