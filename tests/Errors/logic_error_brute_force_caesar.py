@@ -1,3 +1,4 @@
+#logic error on line 40
 import string
 
 
@@ -36,7 +37,7 @@ def decrypt(message: str) -> None:
         for symbol in message:
             if symbol in string.ascii_uppercase:
                 num = string.ascii_uppercase.find(symbol)
-                num = num - key
+                num = num + key #+ instead of -, leading to incorrect decryption
                 if num < 0:
                     num = num + len(string.ascii_uppercase)
                 translated = translated + string.ascii_uppercase[num]
