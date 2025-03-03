@@ -1,4 +1,4 @@
-#Logic error on line 35
+#Syntax error on line 35
 # https://en.wikipedia.org/wiki/Ohm%27s_law
 from __future__ import annotations
 
@@ -32,7 +32,7 @@ def ohms_law(voltage: float, current: float, resistance: float) -> dict[str, flo
     elif current == 0:
         return {"current": voltage / resistance}
     elif resistance == 0:
-        return {"resistance": voltage * current} #"*" instead of "/", the incorrect formula for resistance
+        return {"resistance: voltage / current} #missing closing " on "resistance"
     else:
         raise ValueError("Exactly one argument must be 0")
 
